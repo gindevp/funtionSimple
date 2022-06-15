@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let sum = 0;
+    while (true) {
+        let a = prompt("Nhập pt mảng số và cấm nhập chữ cái ( ok để kết thúc ) :");
+        if (!isNaN(a)) {
+            if (a == "") {
+                continue;
+            }
+            arr.push(a);
+        } else {
+            if (a !== "ok") {
+                alert("Sai rồi ai cho m nhập vào là chữ -_- ")
+                continue;
+            }
+
+        }
+        if (a == "ok") {
+            break;
+        }
+
+    }
+    document.write("mảng=[" + arr + "]<br>");
+    arr.forEach((key) => {
+        sum = sum + "+" + key;
+    })
+    document.write("tổng các pt=" + eval(sum));
+</script>
+</body>
+</html>

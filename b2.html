@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tempeature Convert</h1>
+<p>
+    <label>faha</label>
+    <input id="inputFaha" type="number" placeholder="Faha" oninput="temparatu(this.value)"
+           onchange="temparatu(this.value)"/>
+
+</p>
+<p>
+    Cele:
+    <span id="outCelius"></span>
+</p>
+</body>
+<script>
+    function temparatu(valnum){
+        valnum =parseFloat(valnum);
+        document.getElementById("outCelius").innerHTML=(valnum-32)/1.8
+
+    }
+
+</script>
+</html>
